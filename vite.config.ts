@@ -14,7 +14,7 @@ import html from 'vite-plugin-html';
 import Inspect from 'vite-plugin-inspect';
 import vueSetupExtend from 'vite-plugin-vue-setup-extend';
 import svgLoader from 'vite-svg-loader';
-import { apis } from './src/api';
+
 function resolve(dir: string) {
   return path.join(__dirname, dir);
 }
@@ -23,10 +23,7 @@ function resolve(dir: string) {
 
 export default function (): UserConfigExport {
   return {
-    // 全局变量
-    define:{
-      __API__:apis
-    },
+
     server: {
       host: '0.0.0.0', // 解决不能通过ip访问
       proxy: {
