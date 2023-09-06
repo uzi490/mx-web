@@ -1,13 +1,15 @@
 import useAxiosApiexport from '@/utils/useAxiosApi';
-const urlPrefix = "http://localhost:8082";
-
+const urlPrefix = 'http://localhost:8082';
 
 /**
  * 账号密码登录
  * @returns UseAxiosReturn
  */
 export function loginPassword(data: AnyObject) {
-  return useAxiosApiexport(`${urlPrefix}/login/password`, { method: 'POST', data });
+  return useAxiosApiexport(`${urlPrefix}/login/password`, {
+    method: 'POST',
+    data
+  });
 }
 
 /**
@@ -15,7 +17,10 @@ export function loginPassword(data: AnyObject) {
  * @returns UseAxiosReturn
  */
 export function codeGet(data: AnyObject) {
-  return useAxiosApiexport(`${urlPrefix}/user/code/get`, { method: 'POST', data });
+  return useAxiosApiexport(`${urlPrefix}/user/code/get`, {
+    method: 'POST',
+    data
+  });
 }
 
 /**
@@ -116,7 +121,10 @@ export function userGet(params: AnyObject) {
  * @returns UseAxiosReturn
  */
 export function userModify(data: AnyObject) {
-  return useAxiosApiexport(`${urlPrefix}/user/modify`, { method: 'POST', data });
+  return useAxiosApiexport(`${urlPrefix}/user/modify`, {
+    method: 'POST',
+    data
+  });
 }
 
 /**
@@ -135,7 +143,8 @@ export function passwordChange(data: AnyObject) {
  * @returns UseAxiosReturn
  */
 export function userLogout(data: AnyObject) {
-  return useAxiosApiexport(`${urlPrefix}/user/logout`, { method: 'POST', data });
+  return useAxiosApiexport(`${urlPrefix}/user/logout`, {
+    method: 'POST',
+    data
+  });
 }
-
-

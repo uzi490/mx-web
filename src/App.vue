@@ -1,5 +1,5 @@
 <template>
-  <ElConfigProvider :locale="zhCn">
+  <ElConfigProvider>
     <Suspense>
       <template #default>
         <router-view v-slot="{ Component, route }">
@@ -22,6 +22,6 @@
   </ElConfigProvider>
 </template>
 <script lang="ts" setup>
-import zhCn from 'element-plus/lib/locale/lang/zh-cn';
+// import zhCn from 'element-plus/lib/locale/lang/zh-cn';
 import './App.css';
 </script>
